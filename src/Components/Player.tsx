@@ -1,18 +1,19 @@
-interface Props{
-    player: string[];
-    
+import "../app.css";
 
+interface Props {
+  player: string;
+  score: number;
 }
 
-const Player = () => {
+const Player = ({ player, score }: Props) => {
   return (
-    <>
-        <h3>
+    <div className="player">
+      <h3>
+        {player} {score}
+      </h3>
+      <div className="image">Image Here</div>
+    </div>
+  );
+};
 
-        </h3>
-    
-    </>
-  )
-}
-
-export default Player
+export default Player;

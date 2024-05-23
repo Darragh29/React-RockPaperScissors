@@ -1,17 +1,16 @@
-import Player from "./Components/Player"
-import "./app.css"
+import Player from "./Components/Player";
+import "./app.css";
 
 function App() {
-  return(
+  return (
     <>
       <h1 className="header">Rock Paper Scissors</h1>
       <div className="playerBox">
-        <Player/>
-        <Player/>
+        <Player player="Player: " score={0} />
+        <Player player="Computer: " score={0} />
       </div>
-      
     </>
-  )
+  );
 }
 
-export default App
+export default App;
