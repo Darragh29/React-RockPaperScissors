@@ -1,11 +1,13 @@
 import { useState } from "react";
+import "../app.css"
+
 
 interface Props {
-  image: string;
+  icon: JSX.Element;
   onClick: (selection:number) => void;
 }
 
-const Button = ({ image, onClick }: Props) => {
+const Button = ({ icon, onClick }: Props) => {
   const [selection, setSelection] = useState(0);
 
   const handleClick = () => {
@@ -26,7 +28,7 @@ const Button = ({ image, onClick }: Props) => {
 
   return (
     <div>
-      <button onClick={handleClick}>{image}</button>
+      <button className="choiceBtn"  onClick={handleClick}>{icon}</button>
     </div>
   );
 };

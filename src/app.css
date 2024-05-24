@@ -28,6 +28,7 @@ body{
     margin: 10px;
     width: 300px;
     height: 400px;
+    background-color: white;
 }
 
 .image{
@@ -36,4 +37,29 @@ body{
     align-items: center; 
     width: 100%;
     height: 100%; 
+}
+
+.Buttons{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin: auto;
+}
+
+.choiceBtn{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border: 1px grey solid;
+    margin: 10px;
+}
+
+.choiceBtn:hover{
+    background-color: lightgreen;
+}
+
+.btnIcon{
+    width: 60px;
+    height: 60px;
 }
